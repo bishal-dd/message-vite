@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#fireworks-example {
+  position: absolute;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif {
+  height: 100%;
+  width: 100%;
+}
+
+.question {
+  text-align: center;
+  font-size: 1.5em;
+  color: #e94d58;
+  margin: 15px 0;
+}
+.btn-group {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.yes-btn,
+.no-btn {
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px gray;
+  border: 2px solid #e94d58;
+  font-size: 1.2em;
+}
+.yes-btn:nth-child(1),
+.no-btn:nth-child(1) {
+  margin-left: -200px;
+  background: #e94d58;
+}
+.yes-btn:nth-child(2),
+.no-btn:nth-child(2) {
+  margin-right: -200px;
+  background: white;
+  color: #e94d58;
+}
