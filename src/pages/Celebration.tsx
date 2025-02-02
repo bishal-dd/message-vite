@@ -5,7 +5,7 @@ export const Celebration = () => {
   const [searchParams] = useSearchParams();
   const initialQuestion =
     searchParams.get("message") || "Yay, see you on the soon!";
-  const [question, setQuestion] = useState("Will you be my valentine?");
+  const [question, setQuestion] = useState("Will You Be My Valentine?");
   const [gifSrc, setGifSrc] = useState(
     "https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif"
   );
